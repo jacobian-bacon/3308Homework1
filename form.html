@@ -1,0 +1,154 @@
+<!-- Home Page -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {
+            height: 450px
+        }
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            padding-top: 20px;
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
+    <title>Form</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="mypage_bootstrap.html">Home</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!-- <li class="active"><a href="#"></a></li> -->
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="form-group">
+
+        <form action="home.html">
+            <div class="form-row col-md-6">
+                <h1>Add New Interest</h1>
+                <div class="form-group col-md-6">
+
+                    <label for="inputName">Interest Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+                    <div class="form-group">
+                        <p></p>
+                        <label for="FormControlTextarea1">Text about interest</label>
+                        <textarea class="form-control" id="FormControlTextarea1" rows="6"></textarea>
+                    </div>
+                </div>
+                <div class="form-row col-md-6">
+                    <div class="form-group row">
+                        <div class="col-xs-6">
+                            <label class="input-group-text" id="inputGroupFileAddon01">Upload local image</label>
+                            <div class="custom-file">
+                                <span class="custom-file-label" for="inputGroupFile01">Choose file</span>
+                                <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                    aria-describedby="inputGroupFileAddon01">
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <label for="sel1">Select # Tweets to Display:</label>
+                            <select class="form-control" id="sel1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <label for="potato">Level of Interest: </label>
+                    <label class="checkbox-inline" id="potato">
+                        <input type="checkbox" value="">1
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="">2
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="">3
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="">4
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="">5
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-md-6">
+
+            </div>
+            <div class="form-row col-md-6">
+                <div class="form-group row">
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label for="inputUsername1">Login to Finish Submitting</label>
+                            <input type="email" class="form-control" id="inputUsername1" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="form-row col-md-6">
+        <input type="submit" value="submit" class="btn btn-primary">
+    </div>
+    </form>
+    </div>
+</body>
