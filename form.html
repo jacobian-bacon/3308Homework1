@@ -9,6 +9,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
         /* Remove the navbar's default margin-bottom and rounded borders */
         .navbar {
             margin-bottom: 0;
@@ -50,33 +74,37 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse">
+    <ul>
+        <a class="navbar-brand" href="index.html">Home</a>
+        <li><a class="active" href="index.html">Index</a></li>
+        <li><a href="mypage_bootstrap.html">About Me</a></li>
+        <li><a href="form.html">Interest Form</a></li>
+    </ul>
+    <!-- <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="mypage_bootstrap.html">Home</a>
+                <a class="navbar-brand" href="index.html">Home</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <!-- <li class="active"><a href="#"></a></li> -->
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+                    <li class="active"><a href="form.html">Interest Form</a></li>
+                    <li><a href="mypage_bootstrap.html">About Me</a></li>
+                    <li><a href="form.html">Interest Form</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
     <div class="form-group">
 
-        <form action="home.html">
-            <div class="form-row col-md-6">
+        <form action="index.html">
+            <div class="form-group col-md-6">
                 <h1>Add New Interest</h1>
                 <div class="form-group col-md-6">
 
@@ -124,10 +152,8 @@
                     <label class="checkbox-inline">
                         <input type="checkbox" value="">5
                     </label>
-                </div>
-            </div>
-            <div class="form-group col-md-6">
 
+                </div>
             </div>
             <div class="form-row col-md-6">
                 <div class="form-group row">

@@ -4,82 +4,52 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
-        /* Remove the navbar's default margin-bottom and rounded borders */
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-        }
-
-        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-        .row.content {
-            height: 450px
-        }
-
-        /* Set gray background color and 100% height */
-        .sidenav {
-            padding-top: 20px;
-            background-color: #f1f1f1;
-            height: 100%;
-        }
-
-        /* Set black background color, white text and some padding */
-        footer {
-            background-color: #555;
-            color: white;
-            padding: 15px;
-        }
-
-        /* On small screens, set height to 'auto' for sidenav and grid */
-        @media screen and (max-width: 767px) {
-            .sidenav {
-                height: auto;
-                padding: 15px;
-            }
-
-            .row.content {
-                height: auto;
-            }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Register Page</title>
+    <link rel='icon' href='../resources/img/favicon.ico' type='image/x-icon' />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="../resources/css/my_style.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <title>About Me</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="mypage_bootstrap.html">Home</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Index</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mypage_bootstrap.html">About Me<span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="form.html">Interest Form<span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
-                </ul>
+    <nav class="navbar navbar-inverse-sm bg-dark navbar-dark">
+        <div class="container-fluid active d-inline-block align-top">
+            <div class="navbar-header d-inline-block align-top">
+                <a class="navbar-brand " href="index.html">Home</a>
+                <li class="nav-item d-inline-block align-top">
+                    <a class="nav-link" href="index.html">Index</a>
+                </li>
+                <li class="nav-item d-inline-block align-top">
+                    <a class="nav-link" href="mypage_bootstrap.html">About Me</a></li>
+                </li>
+                <li class="nav-item d-inline-block align-top">
+                    <a class="nav-link" href="form.html">Interest Form</a></li>
+                </li>
             </div>
         </div>
     </nav>
+    <div class="container">
+        <div class="form-group col-md-6">
+        </div>
+        <div class="form-group col-md-6">
+        </div>
+        <div class="row h-100">
+            <div class="col-sm-12 text-center my-auto">
+                <div class="card card-block w-50">
+                    <a href="https://github.com/jacobian-bacon" class="btn btn-outline-secondary btn-light">Github
+                        Page</a>
+                    <a href="mypage_bootstrap.html" class="btn btn-outline-secondary btn-light">About Me</a>
+                    <a href="form.html" class="btn btn-outline-secondary btn-light">Interest Form</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
